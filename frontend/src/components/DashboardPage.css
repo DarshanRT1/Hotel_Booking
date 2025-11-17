@@ -1,0 +1,146 @@
+.dashboard-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #285e99;
+}
+
+.logout-button {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #c53030;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+  color: #285e99;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+
+.edit-profile-button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.edit-profile-button:hover {
+  background-color: #3182ce;
+}
+
+.orders-list, .reservations-list {
+  margin-bottom: 15px;
+}
+
+.order-item, .reservation-item {
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.order-header, .reservation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.order-details p, .reservation-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.status.completed {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status.preparing {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
+
+.status.confirmed {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status.pending {
+  background-color: #fefcbf;
+  color: #744210;
+}
+
+.view-menu-link, .book-table-link {
+  display: inline-block;
+  background-color: #48bb78;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.view-menu-link:hover, .book-table-link:hover {
+  background-color: #3da566;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #4a5568;
+}

@@ -1,0 +1,171 @@
+.booking-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #285e99;
+}
+
+.availability-form, .booking-form {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+.check-availability-button,
+.confirm-booking-button {
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.check-availability-button:hover,
+.confirm-booking-button:hover {
+  background-color: #3da566;
+}
+
+.availability-message {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.availability-message.available {
+  background-color: #c6f6d5;
+  border: 1px solid #9ae6b4;
+}
+
+.availability-message.unavailable {
+  background-color: #fed7d7;
+  border: 1px solid #feb2b2;
+}
+
+.availability-message h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.change-time-button,
+.try-again-button {
+  background-color: #edf2f7;
+  color: #4a5568;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  transition: background-color 0.2s ease;
+}
+
+.change-time-button:hover,
+.try-again-button:hover {
+  background-color: #e2e8f0;
+}
+
+.confirmation-container {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.confirmation-container h1 {
+  color: #48bb78;
+  margin-bottom: 20px;
+}
+
+.confirmation-details {
+  margin-bottom: 30px;
+}
+
+.confirmation-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.confirmation-details strong {
+  color: #285e99;
+}
+
+.new-booking-button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.new-booking-button:hover {
+  background-color: #3182ce;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

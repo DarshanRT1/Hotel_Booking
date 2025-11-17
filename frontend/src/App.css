@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #285e99;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.App-main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.App-main h2 {
+  color: #285e99;
+}
+
+.App-main p {
+  font-size: 18px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #48bb78;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #3da566;
+}
+
+.button-secondary {
+  background-color: #4299e1;
+}
+
+.button-secondary:hover {
+  background-color: #3182ce;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.protected-route {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.protected-route h2 {
+  color: #285e99;
+  margin-bottom: 20px;
+}
+
+.protected-route p {
+  font-size: 18px;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.login-link {
+  background-color: #4299e1;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.login-link:hover {
+  background-color: #3182ce;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .main-nav {
+    justify-content: center;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
